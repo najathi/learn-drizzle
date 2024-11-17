@@ -1,0 +1,33 @@
+{
+  "name": "learn-drizzle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.3",
+    "esbuild": "^0.23.1",
+    "get-tsconfig": "^4.8.1",
+    "pg": "^8.13.1",
+    "resolve-pkg-maps": "^1.0.0",
+    "undici-types": "^6.19.8"
+  },
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "migration:generate": "drizzle-kit generate",
+    "migration:drop": "drizzle-kit drop",
+    "migrate": "drizzle-kit migrate",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.28.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
